@@ -1,0 +1,67 @@
+@import '../../basic_styles/variables.scss';
+
+.tasks-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+  width: 65%;
+  background-color: white;
+  padding: 0.8rem;
+  box-shadow: -1px 0 5px rgba($color: #000000, $alpha: 0.2);
+  border-radius: 0 0.5rem 0.5rem 0;
+  overflow-y: hidden;
+
+  .add-task {
+    position: absolute;
+    bottom: 8px;
+    color: $orange;
+    text-decoration: underline;
+  }
+
+  h1 {
+    display: flex;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    color: $light-blue;
+    span {
+      margin-left: auto;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      width: 100%;
+      padding: 0.5rem;
+      display: grid;
+      grid-template-columns: 20px auto;
+      grid-template-areas: 'icon text';
+      align-items: center;
+      color: $grey-seven;
+
+      svg {
+        color: $grey-four;
+        grid-area: icon;
+      }
+      span {
+        text-align: left;
+        grid-area: text;
+        margin-left:0.5rem;
+        border-bottom: 1px solid $grey-four;
+        line-height: 2.2rem;
+      }
+      input {
+        grid-area: text;
+        padding:0.5rem;
+        border:none;
+        border-bottom: 1px solid $grey-four;
+        font-size: 1.2rem;
+        color: $grey-seven;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
