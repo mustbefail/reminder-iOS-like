@@ -1,10 +1,6 @@
 # iOS-like Reminder app
 
----
-
 ## iOS Reminder app clone
-
----
 
 ### As user you can:
 
