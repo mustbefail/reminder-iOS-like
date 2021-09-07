@@ -1,0 +1,27 @@
+@import '../../styles/global.scss';
+
+.add-reminder {
+  display: grid;
+  grid-template-columns: 1.4rem auto;
+  grid-template-areas: 'label input';
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  label {
+    text-align: center;
+    grid-area: label;
+    @extend .text-orange;
+  }
+  input {
+    transition: all 0.3s;
+    margin-left: 0.5rem;
+    padding-bottom: 0.2rem;
+    border: none;
+    border-bottom: 1px solid map-get($colors, orange);
+    font-size: 1.2rem;
+    &:focus {
+      padding-bottom: 0.6rem;
+      outline: none;
+    }
+  }
+}
