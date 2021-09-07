@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { ICategory } from '../../types/types';
+import { ICategory } from '../../models/types';
 
 import styles from './Category.module.scss';
 
