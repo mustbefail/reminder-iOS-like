@@ -2,6 +2,8 @@
 
 ## iOS Reminder app clone
 
+## [Demo](https://mustbefail.github.io/reminder-macos-like/)
+
 ### As user you can:
 
 1. Add goals
