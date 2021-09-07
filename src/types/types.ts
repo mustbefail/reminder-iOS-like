@@ -1,16 +1,14 @@
-export interface IList {
-  listName: string;
-  listId: string;
-}
-
-export interface ITask {
-  taskName: string;
-  taskId: string;
-  parentList: string;
-}
-
-export interface IFormData {
-  name: string;
+export interface ICategory {
   id: string;
-  currentList?: string;
+  name: string;
+  amount: number;
+  iconColor: string;
+  iconName: string;
+}
+
+export interface IList extends ICategory {}
+
+export interface IReminder {
+  id: string;
+  reminderText: string;
 }

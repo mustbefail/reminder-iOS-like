@@ -1,0 +1,9 @@
+@import '../../styles/global.scss';
+
+.lists {
+  .lists-header {
+    font-weight: bold;
+    padding: 1.5rem 0 0.5rem 1rem;
+    @extend .text-grey-7;
+  }
+}

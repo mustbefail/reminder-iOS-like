@@ -1,8 +1,14 @@
 import { render } from 'react-dom';
-import '@fortawesome/fontawesome-free/js/all';
+import App from './App';
+import { Provider } from 'react-redux';
+import store from './store/index';
+
 import './index.scss';
 
-import App from './App';
-
 const rootElement = document.getElementById('root');
-render(<App />, rootElement);
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootElement
+);
