@@ -1,5 +1,5 @@
-import { IList, IReminder } from './../types/types';
-import { ICategory } from '../types/types';
+import { IList, IReminder } from '../models/types';
+import { ICategory } from '../models/types';
 export const categories: ICategory[] = [
   {
     name: 'Awesome 1 asdfas;dlfkjg',
@@ -74,12 +74,4 @@ export const lists: IList[] = [
     iconName: 'fas fa-book',
     id: Date.now().toString(),
   },
-];
-
-export const reminders: IReminder[] = [
-  { reminderText: 'one two three', id: Date.now().toString() },
-  { reminderText: 'one two three', id: Date.now().toString() },
-  { reminderText: 'one two three', id: Date.now().toString() },
-  { reminderText: 'one two three', id: Date.now().toString() },
-  { reminderText: 'one two three', id: Date.now().toString() },
 ];
