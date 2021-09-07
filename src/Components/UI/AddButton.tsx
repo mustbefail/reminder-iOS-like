@@ -1,11 +1,12 @@
 import { FC } from 'react';
 
-const AddButton: FC<{ title: string; className: string }> = ({
-  className,
-  title,
-}) => {
+const AddButton: FC<{
+  title: string;
+  className: string;
+  addHandler?: () => void;
+}> = ({ className, title, addHandler }) => {
   return (
-    <button className={className}>
+    <button className={className} onClick={addHandler}>
       <i className='fas fa-plus'></i>
       {title}
     </button>
