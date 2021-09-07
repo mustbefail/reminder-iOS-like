@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/macos-reminder-react/static/css/main.6470da8e.chunk.css",
-    "main.js": "/macos-reminder-react/static/js/main.f864089c.chunk.js",
-    "main.js.map": "/macos-reminder-react/static/js/main.f864089c.chunk.js.map",
-    "runtime-main.js": "/macos-reminder-react/static/js/runtime-main.a08ec83a.js",
-    "runtime-main.js.map": "/macos-reminder-react/static/js/runtime-main.a08ec83a.js.map",
-    "static/js/2.6f102f56.chunk.js": "/macos-reminder-react/static/js/2.6f102f56.chunk.js",
-    "static/js/2.6f102f56.chunk.js.map": "/macos-reminder-react/static/js/2.6f102f56.chunk.js.map",
-    "index.html": "/macos-reminder-react/index.html",
-    "static/css/main.6470da8e.chunk.css.map": "/macos-reminder-react/static/css/main.6470da8e.chunk.css.map",
-    "static/js/2.6f102f56.chunk.js.LICENSE.txt": "/macos-reminder-react/static/js/2.6f102f56.chunk.js.LICENSE.txt"
+    "main.css": "/reminder-macos-like/static/css/main.6470da8e.chunk.css",
+    "main.js": "/reminder-macos-like/static/js/main.289d7cb3.chunk.js",
+    "main.js.map": "/reminder-macos-like/static/js/main.289d7cb3.chunk.js.map",
+    "runtime-main.js": "/reminder-macos-like/static/js/runtime-main.bbb5d3bd.js",
+    "runtime-main.js.map": "/reminder-macos-like/static/js/runtime-main.bbb5d3bd.js.map",
+    "static/js/2.37b0dd27.chunk.js": "/reminder-macos-like/static/js/2.37b0dd27.chunk.js",
+    "static/js/2.37b0dd27.chunk.js.map": "/reminder-macos-like/static/js/2.37b0dd27.chunk.js.map",
+    "index.html": "/reminder-macos-like/index.html",
+    "static/css/main.6470da8e.chunk.css.map": "/reminder-macos-like/static/css/main.6470da8e.chunk.css.map",
+    "static/js/2.37b0dd27.chunk.js.LICENSE.txt": "/reminder-macos-like/static/js/2.37b0dd27.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a08ec83a.js",
-    "static/js/2.6f102f56.chunk.js",
+    "static/js/runtime-main.bbb5d3bd.js",
+    "static/js/2.37b0dd27.chunk.js",
     "static/css/main.6470da8e.chunk.css",
-    "static/js/main.f864089c.chunk.js"
+    "static/js/main.289d7cb3.chunk.js"
   ]
 }
