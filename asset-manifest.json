@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/macos-reminder-react/static/css/main.6470da8e.chunk.css",
+    "main.js": "/macos-reminder-react/static/js/main.f864089c.chunk.js",
+    "main.js.map": "/macos-reminder-react/static/js/main.f864089c.chunk.js.map",
+    "runtime-main.js": "/macos-reminder-react/static/js/runtime-main.a08ec83a.js",
+    "runtime-main.js.map": "/macos-reminder-react/static/js/runtime-main.a08ec83a.js.map",
+    "static/js/2.6f102f56.chunk.js": "/macos-reminder-react/static/js/2.6f102f56.chunk.js",
+    "static/js/2.6f102f56.chunk.js.map": "/macos-reminder-react/static/js/2.6f102f56.chunk.js.map",
+    "index.html": "/macos-reminder-react/index.html",
+    "static/css/main.6470da8e.chunk.css.map": "/macos-reminder-react/static/css/main.6470da8e.chunk.css.map",
+    "static/js/2.6f102f56.chunk.js.LICENSE.txt": "/macos-reminder-react/static/js/2.6f102f56.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a08ec83a.js",
+    "static/js/2.6f102f56.chunk.js",
+    "static/css/main.6470da8e.chunk.css",
+    "static/js/main.f864089c.chunk.js"
+  ]
+}
