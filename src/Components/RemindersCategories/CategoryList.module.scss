@@ -4,4 +4,5 @@
   grid-template-columns: repeat(2, 2fr);
   grid-auto-rows: auto;
   gap: 0.7rem;
+  overflow-y: auto;
 }
