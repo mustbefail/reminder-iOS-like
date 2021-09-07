@@ -1,0 +1,24 @@
+@import '../../styles/global.scss';
+
+.reminder {
+  width: 100%;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1.4rem auto;
+  grid-template-areas: 'icon text';
+  align-items: center;
+  @extend .text-grey-7;
+
+  .reminder-icon {
+    text-align: center;
+    grid-area: icon;
+    @extend .text-grey-7;
+  }
+  .reminder-text {
+    text-align: left;
+    grid-area: text;
+    margin-left: 0.5rem;
+    border-bottom: 1px solid map-get($colors, grey-3);
+    line-height: 2.2rem;
+  }
+}
