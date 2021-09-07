@@ -1,8 +1,13 @@
 import React from 'react';
 import styles from './Sidebar.module.scss';
 import cn from 'classnames';
+import SearchForm from '../SearchForm';
 
-const Sidebar: React.FC = ({ children }) => {
+import CategoryList from '../RemindersCategories';
+import Lists from '../LIsts';
+import AddButton from '../UI/AddButton';
+
+const Sidebar: React.FC = () => {
   return (
     <aside className={cn(styles.sidebar, 'bg-grey-1')}>
       <div className={styles['control-container']}>
@@ -14,7 +19,13 @@ const Sidebar: React.FC = ({ children }) => {
           className={cn(styles['control-btn'], 'bg-light-green')}
         ></button>
       </div>
-      {children}
+      <SearchForm />
+      <CategoryList />
+      <Lists />
+      <AddButton
+        className='add-btn add-list text-light-blue'
+        title='Add List'
+      />
     </aside>
   );
 };
