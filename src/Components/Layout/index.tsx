@@ -1,4 +1,4 @@
-import TasksContainer from './TasksContainer';
+import RemindersContainer from './RemindersContainer';
 import Sidebar from './Sidebar';
 
-export { TasksContainer, Sidebar };
+export { RemindersContainer, Sidebar };
