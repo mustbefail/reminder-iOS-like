@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reminder-macos-like/static/css/main.31146369.chunk.css",
-    "main.js": "/reminder-macos-like/static/js/main.e0e9071d.chunk.js",
-    "main.js.map": "/reminder-macos-like/static/js/main.e0e9071d.chunk.js.map",
+    "main.css": "/reminder-macos-like/static/css/main.f9a38795.chunk.css",
+    "main.js": "/reminder-macos-like/static/js/main.ad19123a.chunk.js",
+    "main.js.map": "/reminder-macos-like/static/js/main.ad19123a.chunk.js.map",
     "runtime-main.js": "/reminder-macos-like/static/js/runtime-main.bbb5d3bd.js",
     "runtime-main.js.map": "/reminder-macos-like/static/js/runtime-main.bbb5d3bd.js.map",
-    "static/js/2.e7ce399a.chunk.js": "/reminder-macos-like/static/js/2.e7ce399a.chunk.js",
-    "static/js/2.e7ce399a.chunk.js.map": "/reminder-macos-like/static/js/2.e7ce399a.chunk.js.map",
+    "static/js/2.8f0c84dd.chunk.js": "/reminder-macos-like/static/js/2.8f0c84dd.chunk.js",
+    "static/js/2.8f0c84dd.chunk.js.map": "/reminder-macos-like/static/js/2.8f0c84dd.chunk.js.map",
     "index.html": "/reminder-macos-like/index.html",
-    "static/css/main.31146369.chunk.css.map": "/reminder-macos-like/static/css/main.31146369.chunk.css.map",
-    "static/js/2.e7ce399a.chunk.js.LICENSE.txt": "/reminder-macos-like/static/js/2.e7ce399a.chunk.js.LICENSE.txt"
+    "static/css/main.f9a38795.chunk.css.map": "/reminder-macos-like/static/css/main.f9a38795.chunk.css.map",
+    "static/js/2.8f0c84dd.chunk.js.LICENSE.txt": "/reminder-macos-like/static/js/2.8f0c84dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bbb5d3bd.js",
-    "static/js/2.e7ce399a.chunk.js",
-    "static/css/main.31146369.chunk.css",
-    "static/js/main.e0e9071d.chunk.js"
+    "static/js/2.8f0c84dd.chunk.js",
+    "static/css/main.f9a38795.chunk.css",
+    "static/js/main.ad19123a.chunk.js"
   ]
 }
