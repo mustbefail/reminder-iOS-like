@@ -15,6 +15,7 @@ $colors: (
   teal: rgb(48, 176, 199),
   yellow: rgb(255, 204, 0),
   light-yellow: rgb(255, 214, 10),
+  white: rgb(255, 255, 255),
   grey-1: rgb(242, 242, 242),
   grey-2: rgb(228, 228, 228),
   grey-3: rgb(209, 209, 214),
@@ -22,6 +23,7 @@ $colors: (
   grey-5: rgb(142, 142, 147),
   grey-6: rgb(99, 99, 102),
   grey-7: rgb(72, 72, 74),
+  grey-8: rgb(44, 44, 46),
 );
 
 @each $color-name, $color-val in $colors {
@@ -65,12 +67,22 @@ $colors: (
   &:active {
     @extend .text-grey-6;
   }
-  &.add-list {
-  }
+  // &.add-list {
+  // }
 
   &.add-task {
     text-decoration: underline;
   }
+}
+
+.dark-theme {
+  @extend .bg-grey-8;
+  @extend .text-grey-2;
+}
+
+.light-theme {
+  @extend .bg-white;
+  @extend .text-grey-7;
 }
 
 ::-webkit-scrollbar {
@@ -86,5 +98,5 @@ $colors: (
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  @extend .bg-grey-6;
 }

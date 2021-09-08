@@ -1,15 +1,29 @@
-import React from 'react';
+import { FC, useEffect } from 'react';
 import styles from './Sidebar.module.scss';
 import cn from 'classnames';
 import SearchForm from '../SearchForm';
 
 import CategoryList from '../RemindersCategories';
-import Lists from '../LIsts';
+import Lists from '../Lists';
 import AddButton from '../UI/AddButton';
+import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useActions } from '../../hooks/useAction';
 
-const Sidebar: React.FC = () => {
+const Sidebar: FC = () => {
+  const { switchTheme } = useActions();
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme) {
+      switchTheme(theme);
+    }
+  }, []);
+
+  const theme = useTypedSelector((state) => state.uiReducer.theme);
+
   return (
-    <aside className={cn(styles.sidebar, 'bg-grey-1')}>
+    <aside
+      className={cn(styles.sidebar, 'bg-grey-1', styles[`${theme}-theme`])}
+    >
       <div className={styles['control-container']}>
         <button className={cn(styles['control-btn'], 'bg-light-red')}></button>
         <button

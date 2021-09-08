@@ -7,12 +7,10 @@
   grid-template-columns: 1.4rem auto;
   grid-template-areas: 'icon text';
   align-items: center;
-  @extend .text-grey-7;
 
   .reminder-icon {
     text-align: center;
     grid-area: icon;
-    @extend .text-grey-7;
   }
   .reminder-text {
     text-align: left;

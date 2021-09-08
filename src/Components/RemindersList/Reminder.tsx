@@ -3,12 +3,11 @@ import { IReminder } from '../../models/types';
 import cn from 'classnames';
 
 import styles from './Reminder.module.scss';
-import { useDispatch } from 'react-redux';
-import { ReminderActionCreators } from '../../store/reducers/reminders/action-creators';
+import { useActions } from '../../hooks/useAction';
 
 const Reminder: FC<{ reminder: IReminder }> = ({ reminder }) => {
+  const { SetReminderComplete } = useActions();
   const { text, completed, id } = reminder;
-  const dispatch = useDispatch();
 
   const iconClassnames = {
     fas: completed,
@@ -18,7 +17,7 @@ const Reminder: FC<{ reminder: IReminder }> = ({ reminder }) => {
   };
 
   const completeReminderHandler = () => {
-    dispatch(ReminderActionCreators.SetReminderComplete(!completed, id));
+    SetReminderComplete(!completed, id);
   };
 
   return (

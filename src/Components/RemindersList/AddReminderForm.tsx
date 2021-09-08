@@ -1,30 +1,25 @@
 import { uniqueId } from 'lodash';
 import { FC, FormEvent, useEffect, useRef } from 'react';
-import { useDispatch } from 'react-redux';
-import { ReminderActionCreators } from '../../store/reducers/reminders/action-creators';
-import { UiActionCreators } from '../../store/reducers/UI/action-creators';
+import { useActions } from '../../hooks/useAction';
 
 import styles from './AddReminderForm.module.scss';
 
 const AddReminderForm: FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const dispatch = useDispatch();
+  const { setFormVisibility, addReminder } = useActions();
 
   const addReminderHandler = (event: FormEvent) => {
     event.preventDefault();
     if (inputRef.current) {
       const text = inputRef.current.value;
-      dispatch(
-        ReminderActionCreators.addReminder({
-          text,
-          id: uniqueId(),
-          list: 'general',
-          completed: false,
-        })
-      );
+      addReminder({
+        text,
+        id: uniqueId(),
+        list: 'general',
+        completed: false,
+      });
       inputRef.current.value = '';
-      dispatch(UiActionCreators.setFormVisibility(false));
+      setFormVisibility(false);
     }
   };
 

@@ -6,18 +6,17 @@ import styles from './ReminderList.module.scss';
 
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import AddReminderForm from './AddReminderForm';
-import { useDispatch } from 'react-redux';
-import { ReminderActionCreators } from '../../store/reducers/reminders/action-creators';
+import { useActions } from '../../hooks/useAction';
 
 const ReminderList: FC = () => {
+  const { loadReminders } = useActions();
   const reminders = useTypedSelector((state) => state.reminders.reminders);
-  const dispatch = useDispatch();
   const isFormVisible = useTypedSelector(
     (state) => state.uiReducer.isFormVisible
   );
 
   useEffect(() => {
-    dispatch(ReminderActionCreators.loadReminders());
+    loadReminders();
   }, []);
 
   return (
