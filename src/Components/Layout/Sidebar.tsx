@@ -19,11 +19,16 @@ const Sidebar: FC = () => {
   }, []);
 
   const theme = useTypedSelector((state) => state.uiReducer.theme);
+  const cx = cn.bind(styles);
+
+  const sidebarClassnames = cx({
+    [styles.sidebar]: true,
+    'bg-grey-1': theme === 'light',
+    [`${theme}-theme`]: true,
+  });
 
   return (
-    <aside
-      className={cn(styles.sidebar, 'bg-grey-1', styles[`${theme}-theme`])}
-    >
+    <aside className={sidebarClassnames}>
       <div className={styles['control-container']}>
         <button className={cn(styles['control-btn'], 'bg-light-red')}></button>
         <button
